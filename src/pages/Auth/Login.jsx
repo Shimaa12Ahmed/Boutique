@@ -13,7 +13,7 @@ const Login = () => {
     align="center" 
     p={{ base: "sm", md: 0 }}>
       <Card
-        bg={{ base: "pink.0", md: "transparent" }}
+        bg={{ base: "brand.0", md: "transparent" }}
         shadow={{ base: "md", md: "none" }}
         radius={{ base: "lg", md: 0 }}
         p={0}

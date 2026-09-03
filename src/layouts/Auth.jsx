@@ -22,7 +22,7 @@ const radiusStyle = reverse
       w="100%"
       h="100%"
       flex={{ md: 1 }}
-      bg="pink"
+      bg="brand"
       p={{ base: "lg", md: "xl" }}
       style={{
       

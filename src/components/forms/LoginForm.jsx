@@ -23,7 +23,7 @@ const LoginForm = () => {
     >
       <Box w="100%" maw={{ base: "100%", md: "85%" }}>
     
-        <Anchor component={Link} to="/" c="pink.7" fw={600} fz="sm" underline="hover">
+        <Anchor component={Link} to="/" c="brand.7" fw={600} fz="sm" underline="hover">
           ⏪ Home
         </Anchor>
 
@@ -85,7 +85,7 @@ const LoginForm = () => {
             size="md"
             radius="md"
             fullWidth
-            bg="pink.5"
+            bg="brand.5"
           >
             Login
           </Button>
@@ -94,7 +94,7 @@ const LoginForm = () => {
           <Box ta="center" mt="xs">
             <Text fz="sm" c="gray.7">
               Don’t have an account?{' '}
-              <Anchor component={Link} to="/register" c="pink.7" fw={700} underline="hover">
+              <Anchor component={Link} to="/register" c="brand.7" fw={700} underline="hover">
                 Sign up
               </Anchor>
             </Text>

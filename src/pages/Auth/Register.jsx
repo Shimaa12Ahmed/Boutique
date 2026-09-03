@@ -9,7 +9,7 @@ const Register = () => {
   return (
     <Flex h={{ base: "auto", md: "100vh" }} minH="100vh" justify="center" align="center" p={{ base: "sm", md: 0 }}>
       <Card
-        bg={{ base: "pink.0", md: "transparent" }}
+        bg={{ base: "brand.0", md: "transparent" }}
         shadow={{ base: "md", md: "none" }}
         radius={{ base: "lg", md: 0 }}
         p={0}
@@ -31,7 +31,7 @@ initial="initial"
 animate="animate"
 exit="exit"
 custom={direction}
-transition={authTransition}د>
+transition={authTransition}>
             
             <Auth 
               title="Create Account" 

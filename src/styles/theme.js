@@ -3,20 +3,30 @@ import { createTheme} from '@mantine/core';
 
 export const theme = createTheme({
   colors: {
-    pink: [
-      '#FFF0F5',
-      '#FADCE8',
-      '#F6C8D9',
-      '#F2B3CA',
-      '#E99AB7',
-      '#DF7FA5',
-      '#D46693',
-      '#C94D81',
-      '#A83A69',
-      '#872C54',
+    brand: [
+      '#f2e1d5',
+      '#dcc1ad',
+      '#d7bfae',
+      '#d8beab',
+      '#c19d84',
+      '#c17f4f',
+      '#954e1c',
+      '#7a390a',
+      '#5f3213',
+      '#49250c',
+      // '#FFF0F5',
+      // '#FADCE8',
+      // '#F6C8D9',
+      // '#F2B3CA',
+      // '#E99AB7',
+      // '#DF7FA5',
+      // '#D46693',
+      // '#C94D81',
+      // '#A83A69',
+      // '#872C54',
     ],
 
-    green: [
+    success: [
       '#EEF7F1',
       '#DCEEE2',
       '#C9E5D3',
@@ -43,7 +53,7 @@ export const theme = createTheme({
     ],
   },
 
-  primaryColor: 'pink',
+  primaryColor: 'brand',
 
  
   primaryShade: 5,
@@ -55,7 +65,7 @@ export const theme = createTheme({
       },
 
       label: {
-        color: theme.colors.pink[7],
+        color: theme.colors.brand[7],
       },
     }),
   },
@@ -66,7 +76,7 @@ export const theme = createTheme({
       },
 
       label: {
-        color: theme.colors.pink[7],
+        color: theme.colors.brand[7],
       },
     }),
   },
