@@ -16,7 +16,7 @@ const ProductCard = () => {
       {productData.map((product) => (
         <Grid.Col
           key={product.id}
-          span={{ base: 12, md: 8, lg: 4 }}
+          span={{ base: 12, md: 6, lg: 3 }}
         >
           <Card shadow="sm" padding="lg" withBorder>
             <Card.Section

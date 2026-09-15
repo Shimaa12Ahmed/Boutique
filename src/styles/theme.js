@@ -3,17 +3,18 @@ import { createTheme} from '@mantine/core';
 
 export const theme = createTheme({
   colors: {
-    brand: [
-      '#f2e1d5',
-      '#dcc1ad',
-      '#d7bfae',
-      '#d8beab',
-      '#c19d84',
-      '#c17f4f',
-      '#954e1c',
-      '#7a390a',
-      '#5f3213',
-      '#49250c',
+   brand: [
+  '#F5E8DE',
+  '#EBD4C3',
+  '#E0C0AA',
+  '#D4AA8E',
+  '#C39472',
+  '#B77A52',
+  '#9F5E35',
+  '#834621',
+  '#693616',
+  '#4D270F',
+
       // '#FFF0F5',
       // '#FADCE8',
       // '#F6C8D9',
@@ -39,18 +40,18 @@ export const theme = createTheme({
       '#1E4D2B',
     ],
 
-    cream: [
-      '#FFFDF5',
-      '#FFFBEF',
-      '#FFF8E7',
-      '#FFF1D0',
-      '#FFE7AC',
-      '#F4D99A',
-      '#E5C581',
-      '#D2AF68',
-      '#C19A6B',
-      '#B28A4A',
-    ],
+   cream: [
+  '#FFFBF5',
+  '#FEF8EB',
+  '#FDF0D8',
+  '#FBE1B1',
+  '#F8D28C',
+  '#EFC16C',
+  '#DBAD57',
+  '#C89941',
+  '#A88138',
+  '#886930',
+],
   },
 
   primaryColor: 'brand',
@@ -70,6 +71,29 @@ export const theme = createTheme({
     }),
   },
   PasswordInput: {
+    styles: (theme) => ({
+      input: {
+        backgroundColor: theme.colors.cream[0],
+      },
+
+      label: {
+        color: theme.colors.brand[7],
+      },
+
+    }),
+  },
+  Select: {
+    styles: (theme) => ({
+      input: {
+        backgroundColor: theme.colors.cream[0],
+      },
+
+      label: {
+        color: theme.colors.brand[7],
+      },
+    }),
+  },
+  Textarea: {
     styles: (theme) => ({
       input: {
         backgroundColor: theme.colors.cream[0],

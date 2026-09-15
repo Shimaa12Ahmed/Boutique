@@ -1,4 +1,5 @@
 import { TextInput, PasswordInput, Box, Flex, Button, Text, Anchor } from "@mantine/core";
+import { FaArrowLeftLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
@@ -27,7 +28,7 @@ const RegisterForm = () => {
       <Box w="100%" maw={{ base: "100%", md: "85%" }}>
       
         <Anchor component={Link} to="/" c="brand.7" fw={600} fz="sm" underline="hover">
-          ⏪ Home
+         <FaArrowLeftLong /> Home
         </Anchor>
 
         <form
@@ -43,6 +44,7 @@ const RegisterForm = () => {
           <Flex direction={{ base: "column", md: "row" }} gap="md">
             <TextInput
               variant='filled'
+              name='firstName'
               size='md'
               radius='md'
               label='First Name'
@@ -61,6 +63,7 @@ const RegisterForm = () => {
 
             <TextInput
               variant='filled'
+               name='lastName'
               size='md'
               radius='md'
               label='Last Name'
@@ -80,6 +83,7 @@ const RegisterForm = () => {
 
           <TextInput
             variant='filled'
+             name='email'
             size='md'
             radius='md'
             w="100%"
@@ -99,6 +103,7 @@ const RegisterForm = () => {
 
           <PasswordInput
             variant='filled'
+             name='password'
             size='md'
             radius='md'
             w="100%"
@@ -122,6 +127,7 @@ const RegisterForm = () => {
 
           <PasswordInput
             variant='filled'
+             name='confirmPassword'
             size='md'
             radius='md'
             w="100%"

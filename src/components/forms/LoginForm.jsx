@@ -1,4 +1,5 @@
 import { Flex, Text, TextInput, PasswordInput, Button, Box, Anchor } from '@mantine/core';
+import { FaArrowLeftLong } from "react-icons/fa6";
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 
@@ -24,7 +25,7 @@ const LoginForm = () => {
       <Box w="100%" maw={{ base: "100%", md: "85%" }}>
     
         <Anchor component={Link} to="/" c="brand.7" fw={600} fz="sm" underline="hover">
-          ⏪ Home
+          <FaArrowLeftLong /> Home
         </Anchor>
 
         <form
