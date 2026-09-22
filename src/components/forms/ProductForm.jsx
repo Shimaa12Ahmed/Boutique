@@ -42,12 +42,10 @@ const ProductForm = ({
 
   useEffect(() => {
     if (initialValues) {
-      const { image, ...productValues } = initialValues;
+      const productValues = { ...initialValues };
+      delete productValues.image;
 
       reset(productValues);
-
-   
-      setImagePreview(image || null);
     }
   }, [initialValues, reset]);
 
@@ -101,9 +99,9 @@ const ProductForm = ({
                   style={{ cursor: 'pointer' }}
                 >
 
-                  {imagePreview ? (
+                  {(imagePreview || initialValues?.image) ? (
                     <Image
-                      src={imagePreview}
+                      src={imagePreview || initialValues?.image}
                       alt="Product preview"
                       w={150}
                       h={150}
@@ -247,3 +245,4 @@ const ProductForm = ({
 };
 
 export default ProductForm;
+
